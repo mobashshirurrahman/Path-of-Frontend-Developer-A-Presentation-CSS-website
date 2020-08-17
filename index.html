@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Presentation</title>
+  </head>
+
+  <body>
+    <!-- Page 1 (Intro) -->
+    <section id="page-1" class="page">
+      <h1>Welcome To Path Of Frontend Developers</h1>
+      <p>
+        Frontend development is how we build user interfaces for the web. You
+        must have a strong foundation in JavaScript as well as understanding how
+        HTML/CSS work.<br />So Lets Discuss As Beginner What You Should Learn To Get Job As A Fresher Profile!!
+      </p>
+      <a href="#page-2" class="btn">
+        Next Page <i class="fas fa-arrow-circle-down"></i>
+      </a>
+    </section>
+    <!-- Page 2 (Intro) -->
+    <section id="page-2" class="page">
+      <h1>HTML5</h1>
+      <p>
+        Hypertext Markup Language is the standard markup language for documents
+        designed to be displayed in a web browser. It can be assisted by
+        technologies such as Cascading Style Sheets and scripting languages such
+        as JavaScript. You can learn it in 1-2 days. For tutorial go to
+        <a href="https://www.w3schools.com/html/" target="_blank">w3schools tutorials</a>
+      </p>
+      <a href="#page-1"  class="btn btn-dark">
+        Previous Page <i class="fas fa-arrow-circle-up"></i>
+      </a>
+      <a href="#page-3" class="btn">
+        Next Page <i class="fas fa-arrow-circle-down"></i>
+      </a>
+    </section>
+    <!-- Page 3 (Intro) -->
+    <section id="page-3" class="page">
+      <h1>Cascading Style Sheets (CSS)</h1>
+      <p>
+        Cascading Style Sheets is a style sheet language used for describing the
+        presentation of a document written in a markup language like HTML. CSS
+        is a cornerstone technology of the World Wide Web, alongside HTML and
+        JavaScript. For this you have to practice more and more after learning
+        basic. You can follow
+        <a
+          href="https://www.youtube.com/playlist?list=PL0b6OzIxLPbzDsI5YXUa01QzxOWyqmrWw" target="_blank"
+          >Yohoo Baba</a
+        > video lectures.
+      </p>
+      <a href="#page-2" class="btn btn-dark">
+        Previous Page <i class="fas fa-arrow-circle-up"></i>
+      </a>
+      <a href="#page-4" class="btn">
+        Next Page <i class="fas fa-arrow-circle-down"></i>
+      </a>
+    </section>
+    <!-- Page 4 (Intro) -->
+    <section id="page-4" class="page">
+      <h1>JavaScript</h1>
+      <p>
+        JavaScript, often abbreviated as JS, is a programming language that
+        conforms to the ECMAScript specification. JavaScript is high-level,
+        often just-in-time compiled, and multi-paradigm. It has curly-bracket
+        syntax, dynamic typing, prototype-based object-orientation, and
+        first-class functions. For video lecture refer
+        <a
+          href="https://www.youtube.com/playlist?list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV" target="_blank"
+          >Telusko Learning</a
+        >
+      </p>
+      <a href="#page-3" class="btn btn-dark">
+        Previous Page <i class="fas fa-arrow-circle-up"></i>
+      </a>
+      <a href="#page-5" class="btn">
+        Next Page <i class="fas fa-arrow-circle-down"></i>
+      </a>
+    </section>
+
+    <!-- Page 5 (Intro) -->
+    <section id="page-5" class="page">
+      <div>
+        <h1>React</h1>
+      <p>
+        React is an open-source JavaScript library for building user interfaces
+        or UI components. It is maintained by Facebook and a community of
+        individual developers and companies. React can be used as a base in the
+        development of single-page or mobile applications. For video lecture refer <a href="https://www.freecodecamp.org/news/learn-react-course/" target="_blank">freecodecamp</a>
+      </p>
+      <a href="#page-4" class="btn">
+        Previous Page <i class="fas fa-arrow-circle-up"></i>
+      </a>
+      </div>
+      <div class="footer">created by @Mobashshir</div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Smooth Scrolling
+      $(".btn").on("click", function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          const hash = this.hash;
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800
+          );
+        }
+      });
+    </script>
+  </body>
+</html>
